@@ -13,6 +13,7 @@ def look_and_say(ctr, data = None, last_ctr = 0):
 		temp_data = ''
 		val, temp_ctr, ind = data[0], 1, 1
 		while ind < len(data):
+			# Slide across the string to build next string
 			while ind < len(data) and data[ind] == val:
 				temp_ctr += 1
 				ind += 1

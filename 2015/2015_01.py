@@ -3,6 +3,7 @@
 # https://adventofcode.com/2015/day/1
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 def parser(part = 'a'):
 	with open("2015_01.txt") as file_data:
 		data = file_data.read()

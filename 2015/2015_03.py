@@ -3,6 +3,7 @@
 # https://adventofcode.com/2015/day/3
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 def coords_changer(coords, move):
 	move_dict = {'^': [0, 1], 'v': [0, -1], '>': [1, 0], '<': [-1, 0]}
 	return tuple([coords[0] + move_dict[move][0], coords[1] + move_dict[move][1]])

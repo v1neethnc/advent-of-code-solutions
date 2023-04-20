@@ -3,6 +3,7 @@
 # https://adventofcode.com/2015/day/5
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 import re
 
 def is_nice_part_a(val):

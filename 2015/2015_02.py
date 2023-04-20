@@ -3,6 +3,7 @@
 # https://adventofcode.com/2015/day/2
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 def area_calc(l, b, h):
 	return 2*(l*b + b*h + h*l) + l*b
 

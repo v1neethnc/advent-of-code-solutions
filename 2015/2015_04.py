@@ -3,6 +3,7 @@
 # https://adventofcode.com/2015/day/4
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 from hashlib import md5
 
 def checker(part = 'a'):

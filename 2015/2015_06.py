@@ -3,6 +3,7 @@
 # https://adventofcode.com/2015/day/6
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 def grid_updater(grid_state, instruction, part = 'a'):
 	start, end = instruction[1], instruction[2]
 	inst_a = {'on': 1, 'off': 0}

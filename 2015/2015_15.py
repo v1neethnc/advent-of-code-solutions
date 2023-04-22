@@ -1,8 +1,10 @@
 # Advent of Code, 2015
-# Day 14: Reindeer Olympics
-# https://adventofcode.com/2015/day/14
+# Day 15: Science for Hungry People
+# https://adventofcode.com/2015/day/15
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
+from numpy import prod
 
 def max_score_calc(part = 'a'):
 	max_val = 0
@@ -20,8 +22,6 @@ def max_score_calc(part = 'a'):
 				max_val = max(max_val, res)
 	return max_val
 
-
-from numpy import prod
 with open('2015_15.txt') as file_data:
 	data = file_data.readlines()
 	ingr_scores = []

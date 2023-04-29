@@ -3,7 +3,9 @@
 # https://adventofcode.com/2015/day/22
 # https://github.com/v1neethnc/advent-of-code-solutions
 
+
 from copy import deepcopy
+
 min_mana = 2**32
 def fight_sim(playerHP, mana, bossHP, damage, activespells, is_player_turn, manaUsed, part):
 

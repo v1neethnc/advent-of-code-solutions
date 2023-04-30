@@ -1,23 +1,17 @@
 # Advent of Code, 2016
-# Day 1: No Time for a Taxicab
-# https://adventofcode.com/2016/day/1
+# Day 2: Bathroom Security
+# https://adventofcode.com/2016/day/2
 # https://github.com/v1neethnc/advent-of-code-solutions
 
 
 def movement(pattern, instructions, start, part = 'a'):
-	# pattern = [[0,0,0,0,0],[0,1,2,3,0],[0,4,5,6,0],[0,7,8,9,0],[0,0,0,0,0]]
 	directions = {'U': [-1, 0], 'D': [1, 0], 'L': [0, -1], 'R': [0, 1]}
-	# print(f"{start=}{pattern[start[0]][start[1]]}")
 	for i in instructions:
-		# print(start[0] + directions[i][0], start[1] + directions[i][1])
 		if pattern[start[0] + directions[i][0]][start[1] + directions[i][1]] != 0:
 			start = [start[0] + directions[i][0], start[1] + directions[i][1]]
 	return pattern[start[0]][start[1]]
 
 def coords_converter(pattern, value):
-	# coords = {1: [1, 1], 2: [1, 2], 3: [1, 3], 4: [2, 1], 5: [2, 2], 6: [2, 3], 7: [3, 1], 8: [3, 2], 9: [3, 3]}
-	# return coords[val]
-	# return []
 	for ind, val in enumerate(pattern):
 		if value in val:
 			return [ind, val.index(value)]

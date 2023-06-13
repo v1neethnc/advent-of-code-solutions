@@ -7,7 +7,6 @@
 from copy import deepcopy
 
 def row_updater(grid, index, shift):
-	# print('row update', index, shift)
 	new_grid = deepcopy(grid)
 	row_vals = [[ind, val] for ind, val in enumerate(new_grid[index])]
 	for row in row_vals:
@@ -32,11 +31,7 @@ def activate(grid, coords):
 
 data = open("2016_08.txt").read().split("\n")
 grid = [[0]*50 for i in range(6)]
-# for i in grid:
-# 	print(i)
-# print()
 for i in data:
-	# print(i)
 	tokens = i.split(' ')
 	if tokens[0] == 'rect':
 		coords = list(map(int, tokens[1].split('x')))
@@ -48,9 +43,7 @@ for i in data:
 			grid = row_updater(grid, ind, shift)
 		else:
 			grid = col_updater(grid, ind, shift)
-	# for i in grid:
-	# 	print(i)
-	# print()
+
 print(f"Part A: {sum([sum(i) for i in grid])}")
 print(f"Part B:")
 for row in grid:
